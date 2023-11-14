@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:rooy{
+    --navbar-height: 59px
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    margin: 34px 45px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    color: white;
+}
