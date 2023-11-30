@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="updaterecipe.css" />
+    <title>Update Recipes</title>
+  </head>
+  <body>
+    <div class="form">
+      <section class="img">
+        <div
+          id="previewImage">
+        </div>
+      </section>
+      <section id="add-recipe">
+        <form id="recipeForm">
+          <h1>Update Recipes</h1>
+          <input
+            type="text"
+            placeholder="Name of the recipe"
+            name="name"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Image URL of the recipe"
+            name="imageUrl"
+            onchange="preview()"
+            required
+          />
+          <textarea
+            placeholder="Description of the recipe"
+            name="description"
+            required
+          ></textarea>
+          <input
+            type="text"
+            placeholder="Author name..."
+            name="author"
+            required
+          />
+          <textarea
+            id="ingredients"
+            placeholder="Ingredients (enter one ingredient per line)"
+            name="ingredients"
+            required
+          ></textarea>
+          <textarea
+            placeholder="Method of preparing the recipe"
+            name="method"
+            required
+          ></textarea>
+          <button type="button" onclick="editRecipe()">Update</button>
+        </form>
+      </section>
+    </div>
+    <script src="./edit.js"></script>
+  </body>
+</html>

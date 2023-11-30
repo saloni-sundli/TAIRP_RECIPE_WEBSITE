@@ -4,20 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Recipe App</title>
 </head>
 <body>
-    <nav id="navbar">
-        <div id="logo">
-            <img src="logo.png" alt="logo">
-        </div>     
-        
+    <nav>
+        <div class="logo">
+            <h1>Foodies</h1>
+        </div>
         <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">About</a></li>
-            <li class="item"><a href="#">Contacts</a></li>
-            <li class="item"><a href="#">Search</a></li>
+            <li class="home">Home</li>
+            <li class="add"><a href="./addrecipe.html">Add</a></li>
         </ul>
     </nav>
+
+    <div class="container">
+        <main id="main">
+            <div class="info">
+                <h1>Sandwich</h1>
+                <div class="image-container">
+                    <img src="img1.jpg" alt="" class="default-img">
+                <p>Kunal Kapour</p>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, impedit?</p>
+                <ul class="ingredient">
+                    <li>Bread</li>
+                    <li>Onion</li>
+                    <li>tomato</li>
+                    <li>mynoneses</li>
+                </ul>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, atque rerum neque iste incidunt asperiores odio optio, aliquam omnis hic veniam ipsa facilis, natus est voluptate! Soluta debitis amet quas provident quos nulla sit quaerat sapiente dicta? Quam neque ducimus omnis, atque, minus dignissimos, soluta non nemo accusamus vel earum.</h2>
+            </div>
+        </main>
+        <aside id="recipe-card">
+            <h1>Faviorate Recipe</h1>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

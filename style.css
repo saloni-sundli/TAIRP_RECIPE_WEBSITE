@@ -1,30 +1,236 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 
-:rooy{
-    --navbar-height: 59px
+.logo > h1{
+    font-size: 2rem;
+    font-family: 'Lobster', sans-serif;
+    color: #DF826C;;
 }
 
-#navbar{
+*::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+}
+
+body {
+    background-image: url('./bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+aside {
+    border-left: 4px solid #ddd;
+}
+
+.home,
+.add > a {
+    color: #DF826C;;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    letter-spacing: 2px;
+}
+
+.add > a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 2px 2px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-#logo{
-    margin: 34px 45px;
+nav > div {
+    font-size: 1.2rem;
 }
 
-#logo img{
-    height: 59px;
-    margin: 3px 6px;
+nav > ul {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 1rem;
 }
 
-#navbar ul{
+nav > ul li {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    gap: 1rem;
+}
+
+main,
+aside {
+    height: 90vh;
+    padding: 0.75rem 1rem;
+}
+
+main {
+    overflow-y: scroll;
+    width: 70vw;
     display: flex;
 }
 
-#navbar ul li{
+.info {
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    overflow-y: scroll;
+}
+
+.info > h1 {
+    font-size: 2rem;
+    width: 500px;
+    font-family: 'Nova Square', sans-serif;
+}
+
+.info > .image-container {
+    width: 500px;
+    height: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.info > .image-container > div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.default-img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-container >img {
+   height: 400px;
+   width: 500px;
+}
+
+.image-container > p {
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
     color: white;
+    background-color: #333;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.7rem;
+}
+
+.image-container > button{
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 2%;
+    bottom: 20%;
+}
+
+.info > p {
+    width: 500px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.info > h2 {
+    font-size: 0.75rem;
+    text-align: center;
+    width: 500px;
+}
+
+aside {
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    overflow-y: scroll;
+    position: relative;
+    padding-top: 6rem;
+}
+
+aside > h1 {
+    position: absolute;
+    font-size: 2rem;
+    top: 2%;
+    font-family: 'Nova Square', sans-serif;
+}
+
+article {
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+article > img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+article > p {
+    background-color: #1115;
+    position: absolute;
+    color: white;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    padding: 10px;
+}
+
+.ingredient {
+    background: #1111;
+    width: 500px;
+    border-radius: 4px;
+    padding: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    color: #111;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.ingredient li {
+    background: #fff;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+}
+
+button:nth-child(2){
+    bottom: 35%;
 }
